@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+    <!-- This seciton increases the stack sizes on a lot of common items.  To add more just cut and paste a new line, then add the item name and desired size after value-->
+
+    <!-- Food Items-->
+    <set xpath="/items/item[@name='foodCropBlueberries']/property[@name='Stacknumber']/@value">500</set>
+    <set xpath="/items/item[@name='foodCropCorn']/property[@name='Stacknumber']/@value">500</set>
+    <set xpath="/items/item[@name='foodCropGraceCorn']/property[@name='Stacknumber']/@value">500</set>
+    <set xpath="/items/item[@name='foodCropPotato']/property[@name='Stacknumber']/@value">500</set>
+    <set xpath="/items/item[@name='foodCropMushrooms']/property[@name='Stacknumber']/@value">500</set>
+    <set xpath="/items/item[@name='foodCropYuccaFruit']/property[@name='Stacknumber']/@value">500</set>
+    <set xpath="/items/item[@name='foodCropPumpkin']/property[@name='Stacknumber']/@value">500</set>
+    <set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">500</set>
+
+    <!-- Medical Items-->
+    <!-- x10 -->
+    <set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">10</set>
+    <set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">10</set>
+    <set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">10</set>
+    <!-- x20 -->
+    <set xpath="/items/item[@name='medicalSplint']/property[@name='Stacknumber']/@value">20</set>
+    <set xpath="/items/item[@name='drugVitamins']/property[@name='Stacknumber']/@value">20</set>
+    <set xpath="/items/item[@name='drugPainkillers']/property[@name='Stacknumber']/@value">20</set>
+    <set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">20</set>
+    <set xpath="/items/item[@name='drugAntibiotics']/property[@name='Stacknumber']/@value">20</set>
+    <!-- X30 -->
+    <set xpath="/items/item[@name='medicalBloodBag']/property[@name='Stacknumber']/@value">30</set>
+
+</configs>

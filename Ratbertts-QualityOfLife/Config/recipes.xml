@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+	<!-- Added a second stone arrow/bolt recipes that uses cloth instead of feathers -->
+	<append xpath="/recipes">
+		<recipe name="ammoArrowStone" count="1">
+			<ingredient name="resourceRockSmall" count="1"/>
+			<ingredient name="resourceWood" count="1"/>
+			<ingredient name="resourceCloth" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltStone" count="1">
+			<ingredient name="resourceRockSmall" count="1"/>
+			<ingredient name="resourceWood" count="1"/>
+			<ingredient name="resourceCloth" count="1"/>
+		</recipe>
+		<recipe name="ammoBundleArrowStone" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceRockSmall" count="80"/>
+			<ingredient name="resourceWood" count="80"/>
+			<ingredient name="resourceCloth" count="80"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceRockSmall" count="80"/>
+			<ingredient name="resourceWood" count="80"/>
+			<ingredient name="resourceCloth" count="80"/>
+		</recipe>
+	</append>
+
+	<!-- Adds dyes to bench.  Comment out this section if you don't want them-->
+	<append xpath="/recipes">
+		<recipe name="modDyeWhite" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="resourceCropCottonPlant" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+		<recipe name="modDyeRed" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+		<recipe name="modDyeGreen" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="resourceYuccaFibers" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+		<recipe name="modDyeBlack" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+		<recipe name="modDyeBrown" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="resourceCropCoffeeBeans" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+		<recipe name="modDyeYellow" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+		<recipe name="modDyeBlue" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="foodCropBlueberries" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+		<recipe name="modDyePink" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+			<ingredient name="resourceCropCottonPlant" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+		<recipe name="modDyePurple" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+			<ingredient name="foodCropBlueberries" count="5"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+	</append>
+
+	<!-- Beginning game food changes.  Reduced the amount of meat it takes to make the crappy food items early game down from 5 to what you see below -->
+	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
+	<set xpath="/recipes/recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
+
+	<!-- Beginning seed changes.  This reduces the amount of items it takes to make a seed.  From 5 (default) to 3 items.  Example: 3 potatos to make 1 seed-->
+	<set xpath="/recipes/recipe[@name='plantedCorn1']/ingredient[@name='foodCropCorn']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedCotton1']/ingredient[@name='resourceCropCottonPlant']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedGoldenrod1']/ingredient[@name='resourceCropGoldenrodPlant']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedGraceCorn1']/ingredient[@name='foodCropGraceCorn']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedHop1']/ingredient[@name='resourceCropHopsFlower']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedMushroom1']/ingredient[@name='foodCropMushrooms']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedPotato1']/ingredient[@name='foodCropPotato']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedYucca1']/ingredient[@name='foodCropYuccaFruit']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedPumpkin1']/ingredient[@name='foodCropPumpkin']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedtreeGrassSeed1']/ingredient[@name='resourceYuccaFibers']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedAloe1']/ingredient[@name='resourceCropAloeLeaf']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedBlueberry1']/ingredient[@name='foodCropBlueberries']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedChrysanthemum1']/ingredient[@name='resourceCropChrysanthemumPlant']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='plantedCoffee1']/ingredient[@name='resourceCropCoffeeBeans']/@count">3</set>
+
+	<!-- Change first aid kit recipe - Removes beer and adds aloe instead (because beer makes NO sense!) -->
+	<remove xpath="/recipes/recipe[@name='medicalFirstAidKit']/ingredient[@name='drinkJarBeer']"/>
+	<append xpath="/recipes/recipe[@name='medicalFirstAidKit']">
+		<ingredient name="medicalAloeCream" count="1"/>
+	</append>
+</configs>

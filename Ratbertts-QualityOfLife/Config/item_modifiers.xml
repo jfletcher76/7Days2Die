@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+	<!-- This is the modification that makes the recipes visible on the chem bench.  Comment out if you don't want them to show up. -->
+	<!-- This may be the only thing in the items_modifiers.xml and if so, just delete the file out of the mods folder on your server if you comment them out of the recipies file-->
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeWhite']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeRed']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeGreen']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeBlack']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeBrown']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeYellow']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modDyeBlue']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modDyePink']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modDyePurple']">
+		<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	</append>
+
+</configs>
